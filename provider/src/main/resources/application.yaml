@@ -1,0 +1,12 @@
+server:
+  port: 3355
+  compression:
+    enabled: false
+    min-response-size: 2KB
+  shutdown: graceful
+zookeeper:
+  address: 192.168.61.201
+  port: 2181
+spring:
+  application:
+    name: provider

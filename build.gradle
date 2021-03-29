@@ -1,0 +1,24 @@
+plugins {
+    // 在打成bootJar的时候必须应用这个插件
+    // https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/
+    id 'org.springframework.boot' version "${spring_boot_version}" apply false
+    id "io.spring.dependency-management" version "${spring_dependency_management_version}" apply false
+}
+
+
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter/' }
+        maven { url 'https://maven.aliyun.com/repository/central/' }
+        maven { url 'https://maven.aliyun.com/repository/spring/' }
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+
