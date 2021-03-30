@@ -5,7 +5,7 @@
        http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
     <context:property-placeholder/>
 
-    <dubbo:protocol host="192.168.61.141" port="20890"/>
+    <dubbo:protocol port="20890"/>
 
     <dubbo:registry group="dubbo-test" address="zookeeper://${zookeeper.address:127.0.0.1}:${zookeeper.port:2181}"/>
 </beans>
