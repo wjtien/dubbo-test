@@ -1,9 +1,10 @@
 package com.abc.searcher.service;
 
 
+import java.io.Serializable;
 import java.util.List;
 
-public class NamesAggOutboundDto {
+public class NamesAggOutboundDto implements Serializable {
     private  String words;
     private  List<NameOutboundDto> organizations;
 

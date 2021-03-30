@@ -2,6 +2,7 @@ package com.abc.consumer.controller;
 
 import com.abc.searcher.service.NamesAggOutboundDto;
 import com.abc.searcher.service.NameService;
+import com.alibaba.dubbo.config.annotation.Reference;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,7 +1,9 @@
 package com.abc.searcher.service;
 
 
-public class NameOutboundDto {
+import java.io.Serializable;
+
+public class NameOutboundDto implements Serializable {
     private String organizationId;
     private String organizationName;
 
